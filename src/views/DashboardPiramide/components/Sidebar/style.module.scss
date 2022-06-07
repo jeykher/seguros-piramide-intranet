@@ -1,0 +1,112 @@
+.sidebar {
+    width: 5vw;
+    height: 100vh;
+    background-color: #282828;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .hamburger {
+        width: 25px;
+        margin-top: 20px;
+        cursor: pointer;
+        
+    }
+
+    .linksContainer {
+        display: flex;
+        flex-direction: column;
+        margin-top: 80px;
+    }
+
+    .img {
+       display: none;
+    
+    }
+
+    .imgResponsive {
+       
+        border-style: none;
+        position: relative;
+        width: 100%;
+        display: block;
+        margin-top: 20px;
+        height: 100%;
+        margin: auto;
+        object-fit: cover;
+    }
+
+}
+
+.sidebarOpen {
+    width: 17vw;
+    height: 100vh;
+    background-color: #282828;
+
+    .linksContainer {
+        display: flex;
+        flex-direction: column;
+        margin-top: 80px;
+    }
+
+    a {
+        text-decoration: none;
+        color: #fcfcfc
+    }
+
+    a:hover {
+        text-decoration: none;
+        color: #e39b30;
+    }
+
+    .hamburger {
+        width: 25px;
+        margin-top: 20px;
+        cursor: pointer;
+        margin-left: 17.5px;
+    }
+
+    .img {
+       
+        border-style: none;
+        position: relative;
+        width: 100%;
+        display: block;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        height: 100%;
+        margin: auto;
+        object-fit: cover;
+    }
+
+    .imgResponsive {
+       display: none;
+    
+    }
+}
+
+.container {
+    width: 94vw;
+    margin-left: 6vw;
+}
+
+.containerOpen {
+    width: 81vw;
+    margin-left: 18vw;
+}
+
+.sidebar, .sidebarOpen, .container, .containerOpen {
+    transition-duration: 0.10s;
+}
+/*Nombre de Perfil Sidebar*/
+
+.nameopen{
+    justify-content: center;
+    display: flex; 
+ }
+ 
+ .nameclosed{
+     display: none;
+ }
+
+ 

@@ -1,0 +1,46 @@
+/* .MuiTableHead-root {
+    display: table-header-group;
+} */
+
+.PanelWarning {
+    background: linear-gradient(60deg, #f1d6ae, #f1a74a) !important;
+}
+
+/* table>thead>tr>th {
+    color: #ffffff !important; 
+  font-weight: 800;
+} */
+
+/* #filtros input::placeholder{
+    font-size: 12px !important;
+  
+} */
+/* #filtros div{
+    height: 20px !important;
+   
+      
+} */
+
+/* .-odd{
+    background-color: rgb(248, 241, 219) !important;
+    
+} */
+
+/* tbody  tr td {
+    margin-left: 5% !important;
+    height: 10px !important;
+}
+
+.-center{
+    width: 200% !important;
+}
+.-pagination{
+    display: flex !important;
+}
+
+p {
+    color: #564d4d !important;
+    color: #29201d !important;
+    font-weight: 500;
+    font-size: 12px !important;
+} */

@@ -1,0 +1,19 @@
+.MuiTabs-scroller > span{
+    color: white !important;
+}
+
+.PrivateTabIndicator-colorPrimary-102{
+    background-color: white !important;
+}
+
+#dirTelf{
+    padding: 0px !important;
+}
+#btnContacto{
+    background-color: #e39b30 !important;
+}
+
+/* footer> div{
+    color:"white !important";
+    background-color: "white !important";
+} */

@@ -1,0 +1,42 @@
+const [dataPerfilProfesional,setDataPerfilProfesional] = useState([]);
+
+  useEffect(() =>{
+    const llamadoPerfilProfesional= async() =>{
+      const res = await axios.get('http://localhost:1337/navbar-apoyo-documentals');
+      setDataPerfilProfesional(res.data)
+      console.log(res.data)
+    }
+    llamadoPerfilProfesional()
+  },[])
+
+----------------------------------------------------------------------------------
+{dataPerfilProfesional.map((data,i) =>(
+               <div key={i}>
+                 <img src={{`http://localhost:1337`+data.image} alt="..." className={imageClasses} />
+               </div>
+             ))}
+
+------------------------------------------------------------------------------------
+const [dataApoyoDocumental, setDataApoyoDocumental] = useState([]);
+
+  useEffect(() =>{
+    const llamadoApoyoDocumental = async() =>{
+      const res = await axios.get('http://localhost:1337/navbar-apoyo-documentals');
+   
+
+      const arrayPpal =await res.data.map((data,i) => {
+        return[
+          "",
+          <div className={classes.imgContainer} key={i}>
+             <img src={`http://localhost:1337`+data.avatar.url}  className={classes2.imgRoundedCircle}   alt="..."  />
+          </div>,
+          <div>{data.title}</div>,
+          <div>{data.url}</div>,
+         
+        ]
+      })
+      setArrTable(arrayPpal)
+
+    }
+    llamadoApoyoDocumental()
+  },[])

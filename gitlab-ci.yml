@@ -1,0 +1,43 @@
+image: docker:git
+services:
+  - docker:dind
+
+
+stages:
+  - dockerize_dev
+  - dockerize_QA
+  - dockerize_PRO
+
+
+before_script:
+  - docker login -u "$CI_REGISTRY_USER" -p "$CI_BUILD_TOKEN" "$CI_REGISTRY"
+
+Dockerize_dev:
+  stage: dockerize_dev
+  script:
+    - docker build --pull -t "$CONTAINER_GITLAB"-dev:dev-"$CI_COMMIT_TAG" .
+    - docker push "$CONTAINER_GITLAB"-dev:dev-"$CI_COMMIT_TAG"
+  rules:
+    - if: '$CI_COMMIT_BRANCH != "develop"'
+  #only:
+  #  - develop
+
+Dockerize_QA:
+  stage: dockerize_QA
+  script:
+    - docker build --pull -t "$CONTAINER_GITLAB"-qa:qa-"$CI_COMMIT_TAG" .
+    - docker push "$CONTAINER_GITLAB"-qa:qa-"$CI_COMMIT_TAG"
+  #rules:
+  #  - if: '$CI_COMMIT_BRANCH != "quality"'
+  only:
+    - quality
+
+
+Dockerize_PRO:
+  stage: dockerize_PRO
+  script:
+    - docker build --pull -t "$CONTAINER_GITLAB"-prod:prod-"$CI_COMMIT_TAG" .
+    - docker push "$CONTAINER_GITLAB"-prod:prod-"$CI_COMMIT_TAG"
+  only:
+    - main
+

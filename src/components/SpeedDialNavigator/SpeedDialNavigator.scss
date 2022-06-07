@@ -1,0 +1,40 @@
+$whiteColor: white;
+$speedDialNavigatorWidth: 100px;
+$speedDialNavigatorTranslateZ: translateZ(0px);
+$speedDialNavigatorPosition: fixed;
+$speedDialNavigatorPositionBottom: 1.8rem;
+$speedDialNavigatorPositionRight: 0.8rem;
+$speedDialNavigatorZIndex: 2;
+$speedDialNavigatorBackground: lighten(#ED1C24, 4%);
+$SpeedDialNavigatorItemBoxShadow: 0px 10px 13px -7px #000000, 0px 2px 22px 7px rgba(0,0,0,0.59);
+
+.MuiBox-root {
+    width: $speedDialNavigatorWidth;
+    transform: $speedDialNavigatorTranslateZ;
+    position: $speedDialNavigatorPosition;
+    bottom: $speedDialNavigatorPositionBottom;
+    right: $speedDialNavigatorPositionRight;
+    z-index: $speedDialNavigatorZIndex;
+}
+
+.MuiButtonBase-root {
+    background: $whiteColor!important; 
+    background: $whiteColor!important;
+    background: $whiteColor!important;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 2px 3px 50px 1px rgba(0,0,0,0.73)!important; 
+    box-shadow: 0px 10px 13px -7px #000000, 2px 3px 50px 1px rgba(0,0,0,0.73)!important;
+}
+
+.ipos-speeddial-navigator-item {
+    background: $speedDialNavigatorBackground!important;
+    -webkit-box-shadow: $SpeedDialNavigatorItemBoxShadow; 
+    box-shadow: $SpeedDialNavigatorItemBoxShadow;
+}
+
+.ipos-speeddial-navigator-item-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    cursor: pointer;
+}

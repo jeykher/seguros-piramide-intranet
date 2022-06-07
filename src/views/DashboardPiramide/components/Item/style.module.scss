@@ -1,0 +1,198 @@
+/* Sidebar Cerrada e item Activo */
+.normal[aria-current] {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    color: #fe4d44 !important;
+    background-color: #1f1f1f !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-duration: 0.3s;
+
+    div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    path {
+        fill: #fe4d44 !important;
+    }
+
+    ::after {
+        content: "";
+        position: absolute;
+        width: 3px;
+        height: 50px;
+        background-color: #fe4d44 !important;
+        left: 0;
+        top: 0;
+    }
+}
+
+/* Sidebar Cerrada e item Desactivado */
+.normal {
+    width: 60px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-duration: 0.3s;
+
+    div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    a:hover {
+        path {
+            fill: white !important;
+        }
+    }
+}
+
+/* Sidebar Abierta e item Desactivado */
+.linkOpen {
+    height: 50px;
+    display: flex;
+    padding-left: 0px;
+    align-items: center;
+    gap: 15px;
+    transition-duration: 0.3s;
+
+    p {
+        color: #8f8f8f !important;
+        font-weight: bold;
+        font-size: 12px;
+        margin-top: 10px
+    }
+
+    div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+/* Hovers Sidebar Cerrada */
+.normal:hover {
+    path {
+        fill: white !important;
+    }
+}
+
+/* Sidebar Abierta e item Activado */
+.linkOpen[aria-current] {
+    position: relative;
+    height: 50px;
+    padding-left: 0px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    transition-duration: 0.3s;
+    background-color: #1f1f1f !important;
+
+    path {
+        fill: #fe4d44 !important;
+    }
+
+
+    ::after {
+        content: "";
+        position: absolute;
+        width: 3px;
+        height: 50px;
+        background-color: #fe4d44 !important;
+        left: 0px;
+        top: 0;
+    }
+
+    div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    p {
+        color: #fe4d44 !important;
+        font-weight: bold;
+        font-size: 12px;
+        margin-top: 10px
+    }
+
+    p::after {
+        display: none;
+    }
+
+    
+}
+
+.arrowdown {
+    transform: rotate(90deg);
+    transition: all 400ms ease;
+}
+
+.arrowup {
+    transform: rotate(0deg);
+    transition: all 400ms ease;
+}
+
+.linkOpenMenu[aria-current] {
+    position: relative;
+    height: 50px;
+    padding-left: 60px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    transition-duration: 0.3s;
+    background-color: #1f1f1f !important;
+
+    path {
+        fill: #fe4d44 !important;
+    }
+
+
+    ::after {
+        content: "";
+        position: absolute;
+        width: 3px;
+        height: 50px;
+        background-color: #fe4d44 !important;
+        left: 0px;
+        top: 0;
+    }
+
+    div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    p {
+        color: #fe4d44 !important;
+        font-weight: bold;
+        font-size: 12px;
+        padding-bottom: 2px;
+    }
+
+    p::after {
+        display: none;
+    }
+}
+/* Hovers Sidebar Abierta */
+.linkOpen:hover {
+    p {
+        color: white !important;
+    }
+    path {
+        fill: white !important;
+    }
+
+
+}
+

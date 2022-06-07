@@ -1,0 +1,7 @@
+POST https://emergencia24horas.segurospiramide.com/node/express/servicios/apiIntrasp/BuscaOficinas
+Content-Type: application/json
+
+{ 
+           "cCodEstado":"",
+           "cCodCiudad":"" 
+          }

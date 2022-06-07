@@ -1,0 +1,122 @@
+p{
+    color: #564d4d  !important;
+    color: #29201d  !important;
+    
+}
+
+a {
+    color: #c77811 ;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+#copyright{
+    color: #f1efec !important;
+    font-size: 11px;
+    text-align: center;
+}
+
+.MuiTypography-root {
+    margin: 0;
+    color:   rgb(193 94 10);
+}
+
+.table > tr:nth-of-type(odd) {
+    background-color: #f3f2f8;
+}
+
+.MuiTabs-root {
+    display: flex !important;
+    overflow: hidden;
+    min-height: 48px;
+    
+    color:white;
+}
+
+h2 {
+    line-height: 1.5em;
+    font-size: 26px !important;
+}
+h5 {
+    line-height: 1.5em;
+    font-size: 18px !important;
+}
+
+.MuiTabs-flexContainer > a > button > span{
+    font-size: 11px !important;
+    color: white !important;
+}
+
+.Fondo_Tabs {
+    display: flex;
+    overflow: hidden;
+    min-height: 48px;
+    background-color: #eee;
+    -webkit-overflow-scrolling: touch;
+}
+.MuiTabs-fixed {
+    width: 100%;
+    overflow-x: hidden;
+    background-color: rgb(250 248 248) !important;
+}
+
+#tabsActividades > div > div{
+    background-color:#fbf7e2;
+}
+#TitleTabPromociones{
+    color:"#29201d  !important";
+    font-size:"10px !important";
+    text-align: center;
+}
+
+.MuiTab-textColorPrimary.Mui-selected {
+    color: #880808 !important;
+}
+.PrivateTabIndicator-colorPrimary-148 {
+    background-color: #880808 !important;
+}
+
+.MuiButton-textPrimary {
+    color: #e22727 !important;
+}
+.MuiTableHead-root {
+    display: table-header-group;
+    background-color: #e39b30 ;
+   
+}
+
+/* table>thead>tr>th{
+    color:white !important;
+    font-weight: 800;
+
+} */
+
+
+.MuiAppBar-root{
+    height: 60px !important;
+}
+
+.MuiListItemText-root{
+    color: white !important;
+    font-size: 12px !important;
+}
+
+
+#LogoPiramide{
+    color: white !important;
+}
+
+.MuiList-padding >ul >li a{
+    color: white !important;
+}
+
+.MuiDrawer-root img{
+     width: 200px !important;
+    height: 60px !important; 
+   margin-top: -20px;
+  
+}
+
+.rt-table{
+    width:100%
+}

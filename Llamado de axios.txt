@@ -1,0 +1,23 @@
+const [dataPillsCumpleaños, setDataPillsCumpleaños] = useState([]);
+
+  useEffect(() =>{
+    const llamadoPillsCumpleaños = async() =>{
+      const res = await axios.get('http://localhost:1337/pills-cumpleanos');
+      setDataPillsCumpleaños(res.data)
+
+      const arrayPpal =await res.data.map((data,i) => {
+        return[
+          "",
+          <div className={classes.imgContainer} key={i}>
+             <img src={`http://localhost:1337`+data.avatar.url}  className={classes2.imgRoundedCircle}   alt="..."  />
+          </div>,
+          <div>{data.name}</div>,
+          <div>{data.department}</div>,
+          <div>{data.date}</div>
+        ]
+      })
+      setArrTable(arrayPpal)
+
+    }
+    llamadoPillsCumpleaños()
+  },[])
